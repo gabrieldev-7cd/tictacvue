@@ -4,26 +4,23 @@ class Player {
         this._symbol = symbol;
         this._socketId = socketId;
     }
-
+    
     get name(){
         return this._name;
     }
-
+    
     get symbol(){
-       return this._symbol;
-
+        return this._symbol;
+        
     }
-
+    
     get socketId() {
         return this._socketId;
     }
-
+    
     set symbol(symbol){
         return this._symbol = symbol;
     }
-
     
-
 }
-
-export default Player;
+// export default Player;

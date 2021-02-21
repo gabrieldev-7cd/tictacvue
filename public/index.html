@@ -4,13 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>First Page!</title>
 </head>
 <body>
-    <h1>Tic-Tac-Toe</h1>
-    <script src="/socket.io/socket.io.js"></script><!-- Carregando o Socket.io-client -->
+    <script src="/socket.io/socket.io.js"></script><!-- Load Socket.io -->
+    <script src="/vendor/vue/dist/vue.js"></script>Load vue
     <script src="./js/script.js"></script>
 
+    <div id="msg">
+        <p>{{ mssg }}</p>
+        <input v-model="mssg">
+    </div>
+
+
+    <h1>Tic-Tac-Toe</h1>
+    
+    <main>
+        <div id="app">
+            <div class="register" v-if="!game && !blockRegister">
+                <input type="text" v-model="playerName" placeholder="Entre com seu Nome:">
+                <button @click="startGame" class="btn">Jogar</button>
+            </div>
+        </div>
+        
+    </main>
+    
 </body>
 </html>
