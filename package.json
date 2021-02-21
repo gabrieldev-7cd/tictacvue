@@ -1,0 +1,26 @@
+{
+  "name": "tictacvue",
+  "version": "1.0.0",
+  "description": "\"#tictacVue\"",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gabrieldev-7cd/tictacvue.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gabrieldev-7cd/tictacvue/issues"
+  },
+  "homepage": "https://github.com/gabrieldev-7cd/tictacvue#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "socket.io": "^3.1.1",
+    "vue": "^2.6.12"
+  }
+}
